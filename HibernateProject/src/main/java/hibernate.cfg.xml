@@ -10,7 +10,7 @@
 		<property name="connection.username">pranay</property>
 		<property name="connection.password">Pranay@1234</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
 		<property name="show_sql">true</property>
 
 
@@ -18,6 +18,8 @@
 		<mapping class="com.tuthibernate.Address" />
 		<mapping class="com.map.Question" />
 		<mapping class="com.map.Answer" />
+		<mapping class="com.map1.Emp" />
+		<mapping class="com.map1.Projects" />
 
 
 
