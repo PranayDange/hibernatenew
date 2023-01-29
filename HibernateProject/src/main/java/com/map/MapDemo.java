@@ -51,6 +51,12 @@ public class MapDemo {
 
 		// commit is used to get changes in physical database
 		tx.commit();
+
+		// fetching
+		Question newQ = ss.get(Question.class, 1212);
+		System.out.println(newQ.getQuestion());
+		System.out.println(newQ.getAnswer().getAnswer());
+
 		ss.close();
 		factory.close();
 		System.out.println("MAP DONE>>>>");
