@@ -36,8 +36,8 @@ public class App {
 
 		Student student = new Student();
 		Address ad = new Address();
-		student.setId(102);
-		student.setName("Chaitanya");
+		student.setId(104);
+		student.setName("Mayur");
 		student.setCity("Rajura");
 
 		ad.setStreet("fc street");
