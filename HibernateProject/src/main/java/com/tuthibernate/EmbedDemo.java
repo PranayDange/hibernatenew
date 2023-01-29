@@ -22,6 +22,7 @@ public class EmbedDemo {
 		Certificate c1 = new Certificate();
 		c1.setCourse("android");
 		c1.setDuration("2months");
+		s1.setCerti(c1);
 
 		Student s2 = new Student();
 		s2.setId(2);
@@ -30,6 +31,7 @@ public class EmbedDemo {
 		Certificate c2 = new Certificate();
 		c2.setCourse("Spring");
 		c2.setDuration("3months");
+		s2.setCerti(c2);
 
 		Session s = factory.openSession();
 		Transaction tx = s.beginTransaction();

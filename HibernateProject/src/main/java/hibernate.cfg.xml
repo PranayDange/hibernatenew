@@ -16,6 +16,8 @@
 
 		<mapping class="com.tuthibernate.Student" />
 		<mapping class="com.tuthibernate.Address" />
+		<mapping class="com.map.Question" />
+		<mapping class="com.map.Answer" />
 
 
 
