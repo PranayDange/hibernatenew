@@ -3,6 +3,7 @@ package com.map;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -13,7 +14,10 @@ public class Answer {
 	private int answerId;
 	private String answer;
 
-	@OneToOne(mappedBy = "answer")
+	/*
+	 * @OneToOne(mappedBy = "answer") private Question question;
+	 */
+	@ManyToOne
 	private Question question;
 
 	public Answer() {
