@@ -2,6 +2,7 @@ package com.map;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,7 +23,7 @@ public class Question {
 	 * @JoinColumn(name = "answer_id") // join column is used to name the column //
 	 * if we use one tomany then we have to use list private Answer answer;
 	 */
-	@OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "question", fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	private List<Answer> answers;
 
 	public Question() {

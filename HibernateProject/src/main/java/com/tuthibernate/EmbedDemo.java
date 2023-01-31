@@ -16,18 +16,18 @@ public class EmbedDemo {
 		cfg.configure();
 		SessionFactory factory = cfg.buildSessionFactory();
 		Student s1 = new Student();
-		s1.setId(1);
-		s1.setName("Pranay");
-		s1.setCity("Rajura");
+		s1.setId(5);
+		s1.setName("brock");
+		s1.setCity("pune");
 		Certificate c1 = new Certificate();
 		c1.setCourse("android");
 		c1.setDuration("2months");
 		s1.setCerti(c1);
 
 		Student s2 = new Student();
-		s2.setId(2);
-		s2.setName("Chaitanya");
-		s2.setCity("Rajura");
+		s2.setId(7);
+		s2.setName("cena");
+		s2.setCity("rajura");
 		Certificate c2 = new Certificate();
 		c2.setCourse("Spring");
 		c2.setDuration("3months");

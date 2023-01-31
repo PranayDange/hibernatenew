@@ -1,12 +1,18 @@
 package com.tuthibernate;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity
 //@Entity(name = "student_details")
 //@Table(name = "mystudents")
+@Cacheable
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 public class Student {
 	@Id
 	private int id;
